@@ -16922,7 +16922,7 @@ function urlParam(p, forceArray) {
 
 function stripTrailingSlash(str) {
     if(String(str).substr(-1) === '/') {
-        return String(str).substr(0, str.length - 1);
+        return String(str).substr(0, String(str).length - 1);
     }
     return str;
 }
